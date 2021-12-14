@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninh văn tuấn dạt</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="3">Nhập 2 số a và b</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="a"></td>
+        <td><input type="text" id="b"></td>
+        <td><button onclick="tinh()">Tính</button></td>
+    </tr>
+</table>
+<p id="rs"></p>
+<script>
+
+
+    function tinh(){
+        let a=  document.getElementById('a').value;
+        let b=   document.getElementById('b').value;
+            a = parseInt(a);
+         b= parseInt(b);
+
+
+    if (a % b === 0)
+    {
+       document.getElementById('rs').innerHTML = 'a chia hết cho b'
+    }
+    else
+    {
+        document.getElementById('rs').innerHTML = 'a không chia hết cho b'
+    }
+    }
+</script>
+</body>
+</html>

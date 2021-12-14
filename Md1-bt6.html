@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="rs"></p>
+<script>
+    let sanPham1 = +prompt('nhập sp1', '')
+    let sanPham2 = +prompt('nhập sp2','')
+    let samPham3 = +prompt('nhập sp3', '')
+
+    let tong= sanPham1+sanPham2+samPham3;
+alert(tong)
+    if (tong <100000)
+    {
+        document.getElementById('rs').innerHTML= tong * 0.02
+    } else
+    if (tong >=100000 && tong <500000){
+        document.getElementById('rs').innerHTML = tong *0.05
+    }
+    else
+    if (tong>=500000)
+    {
+        document.getElementById('rs').innerHTML = tong *0.1
+    }
+
+</script>
+</body>
+</html>

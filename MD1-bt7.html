@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ns"></p>
+<script>
+    let a=2500;
+    let phut=+prompt('số phút','')
+
+    if(phut > 200)
+    {
+        phi=(phut-200)*200+150*400+50*600;
+        document.getElementById('ns').innerHTML= phi+ ' điện thoại'
+    }else if (phut >50)
+    {
+        phi=(phut-50)*400+50*600;
+        document.getElementById('ns').innerHTML= phi+ ' điện thoại'
+    }
+    else {
+        phi=phut*600;
+        tong=0.01*phi+a;
+        document.getElementById('ns').innerHTML= phi+ ' điện thoại'
+    }
+
+
+</script>
+</body>
+</html>

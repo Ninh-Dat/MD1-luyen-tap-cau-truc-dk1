@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Dkiemtra= +prompt('nhập điểm kiểm tra', '')
+    let Dgiuaki = +prompt('nhập điểm giữa kì','')
+    let Dcuoiki = +prompt('nhập điểm cuối kì', '')
+
+    if (Dkiemtra >= 8 && Dkiemtra <= 10 )
+    {
+        if (Dgiuaki >=9 && Dgiuaki <= 10)
+        {
+            if (Dcuoiki >=9 && Dcuoiki <= 10)
+            {
+                document.write('Đạt loại giỏi')
+            }
+        }
+    }else
+    {
+        if (Dkiemtra >= 6 && Dkiemtra <= 7)
+        {
+            if (Dgiuaki >=7 && Dgiuaki <= 8)
+            {
+                if (Dcuoiki >=7 && Dcuoiki <= 8)
+                {
+                    document.write('đạt loại khá')
+                }
+            }
+
+        }
+        else
+        {
+            if (Dkiemtra >= 4 && Dkiemtra <= 6)
+            {
+                if (Dgiuaki >=7 && Dgiuaki <= 8)
+                {
+                    if (Dcuoiki >=7 && Dcuoiki <= 8)
+                    {
+                        document.write('đạt loại trung bình')
+                    }
+                }
+            }
+
+            else
+            {
+                document.write('đạt loại yếu')
+            }
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
